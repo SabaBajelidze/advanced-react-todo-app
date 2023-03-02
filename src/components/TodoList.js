@@ -39,6 +39,7 @@ export default function ({ user }) {
       name: user.name
     })
     setDisplay('empty');
+    setActiveTodo(null);
   }
 
   return (

@@ -1,7 +1,7 @@
 import { useUsersContext, useUsersDispatchContext } from '../UsersContext';
 import TodoList from '../components/TodoList';
 import { useEffect, useState } from 'react';
-import { v4 as uuid } from 'uuid';
+// import { v4 as uuid } from 'uuid';
 
 export default function UserMenu({ user: userName, setDisplay }) {
   const users = useUsersContext();
@@ -35,7 +35,7 @@ export default function UserMenu({ user: userName, setDisplay }) {
           name: addTodo,
           completed: addCompleted,
           description: addDescription,
-          id: uuid(),
+          id: Math.random(),
         },
       });
     }
